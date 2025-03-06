@@ -1,0 +1,85 @@
+<!-- {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
+    <title>Shoe-Stopper</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        {% if error %}
+            {{error}}
+        {% endif %}
+        <div class="logo">
+            <img src="{% static 'logo1.jpg' %}" alt="Shoe-Stopper">
+        </div>
+        <h2>Sign In to Shoe-Stopper</h2>
+        
+        <form action="/login/" method="POST">
+            {% csrf_token %}
+            <div class="input-group">
+                <input type="text" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="submit-btn">Sign In</button>
+        </form>
+        
+        <div class="footer">
+            <p>New to Shoe-Stopper? <a href="/signup"></p>
+            <p>Create an account</a></p>
+        </div>
+    </div>
+</body>
+</html> -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe-Stopper</title>
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
+    <style>
+        body {
+            background-image: url("{% static 'logo2.jpg' %}");  /* Correct path */
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+        <div class="logo">
+            <img src="{% static 'logo1.jpg' %}" alt="Shoe-Stopper">
+        </div>
+        <h2>Sign In to Shoe-Stopper</h2>
+        
+        <form action="/login/" method="POST">
+            {% csrf_token %}
+            <div class="input-group">
+                <input type="text" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="submit-btn">Sign In</button>
+        </form>
+        
+        <div class="footer">
+            <p>New to Shoe-Stopper? <a href="/signup">Create an account</a></p>
+        </div>
+    </div>
+</body>
+</html>
+

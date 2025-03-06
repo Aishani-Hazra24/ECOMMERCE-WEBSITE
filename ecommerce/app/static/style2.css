@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+h1
+{
+    align-items: flex-start;
+    position: left;
+}
+
+body {
+    background-image:"potw2050a.jpg";
+    background-color:rgb(180, 180, 179);
+    color: #414141;
+    line-height: 1.6;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#1d1716;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+#navbar{
+    padding: 70px 0px 0px 0px;
+}
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+#hi{
+    padding-left: 230px;
+}
+header nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px 5px 10px 0px;
+    border-radius: 5px;
+    
+}
+
+header .cart a {
+    color: #fff;
+    font-size: 16px;
+}
+
+
+.hero {
+    background: #a55233 no-repeat center center/cover;
+    background-image:url("2[1].jpg");
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+    background-size:relative;
+    background-position: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.shop-now {
+    background-color: #3b5ce0;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+
+.shop-now:hover {
+    background-color: #bf3e29;
+}
+
+.products {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #ffffffc8;
+    border-radius: 8px;
+    width: 250px;
+    margin: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 18px;
+    color: #e04e3b;
+}
+
+.product-item button {
+    background-color: #e04e3b;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-item button:hover {
+    background-color: #bf3e29;
+}
+
+footer {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+.cart{
+    padding: 50px 0px 0px 0px;
+}
+#acc{
+    height: inherit;
+}
+/* .container-fluid{
+    background-image: url("potw2050a.jpg");
+} */
